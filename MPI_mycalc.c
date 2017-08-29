@@ -1,5 +1,3 @@
-/*C-Example*/
-/*Code originally from https://www.dartmouth.edu/~rc/classes/intro_mpi/hello_world_ex.html*/
 #include <stdio.h>
 #include <mpi.h>
 #include <unistd.h>
@@ -83,8 +81,7 @@ int main (argc, argv)
          /*Tell all workers that there's no more work*/
          no_more_work(size);
          printf("Time to die\n");
-
-         /*}*/
+     
       } else  
         {
          while(work >= 0){
